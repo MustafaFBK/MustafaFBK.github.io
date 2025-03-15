@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Mustafa Banikhalaf - Elite Cybersecurity Engineer specializing in penetration testing, red teaming, and digital defense.">
+  <meta name="keywords"
+    content="Cybersecurity, Penetration Testing, Red Teaming, Mustafa Banikhalaf, Ethical Hacking, OSCP">
+  <title>Mustafa Banikhalaf | Cybersecurity Engineer</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js" defer></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "gArnofHV0frLQMsTx",
+      });
+    })();
+  </script>
+  <script src="contact.js" defer></script>
+  <script src="admin.js" defer></script>
+</head>
+
+<body class="dark">
+  <!-- Binary Rain Background -->
+  <canvas id="binary-rain"></canvas>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="spinner-border text-success" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+  <!-- Profile Photo -->
+  <img src="img.png" alt="Mustafa Faek Banikhalaf" class="profile-photo">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-opacity-95 dark:bg-gray-900 light:bg-white shadow-lg z-20 glass-effect">
+    <div class="max-w-8xl mx-auto px-2 py-4 flex justify-between">
+      <!-- Brand/Logo -->
+      <a href="#" class="text-2xl sm:text-3xl font-bold neon-text dark:text-green-400 light:text-blue-600 navbar-brand">
+        <!-- Add your brand/logo text here -->
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <ul class="flex space-x-16 sm:space-x-8 items-center d-none d-lg-flex">
+        <li><a href="#home" class="neon-text hover:text-red-400 text-base sm:text-lg font-medium nav-link">Home</a></li>
+        <li><a href="#about" class="neon-text hover:text-red-400 text-base sm:text-lg font-medium nav-link">Profile</a>
+        </li>
+        <li><a href="Blogs/blogs.html"
+            class="neon-text hover:text-red-400 text-base sm:text-lg font-medium nav-link">Blogs</a></li>
+        <li><a href="#journey"
+            class="neon-text hover:text-red-400 text-base sm:text-lg font-medium nav-link">Journey</a></li>
+        <li><a href="#skills"
+            class="neon-text hover:text-red-400 text-base sm:text-lg font-medium nav-link">Expertise</a></li>
+        <li><a href="#terminal"
+            class="neon-text hover:text-red-400 text-base sm:text-lg font-medium nav-link">Terminal</a></li>
+        <li><a href="#contact"
+            class="neon-text hover:text-red-400 text-base sm:text-lg font-medium nav-link">Contact</a></li>
+        <li>
+          <!-- Theme Toggle Button -->
+          <button id="theme-toggle" class="p-1 rounded-full dark:bg-gray-800 light:bg-gray-200 cyber-pulse"
+            data-bs-toggle="tooltip" title="Toggle Theme">
+            <svg class="w-6 h-6 dark:text-green-400 light:text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14V4a6 6 0 010 12z" />
+            </svg>
+          </button>
+        </li>
+      </ul>
+
+      <!-- Mobile Navigation Toggle Button -->
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <i class="fas fa-bars dark:text-white light:text-gray-800"></i>
+      </button>
+
+      <!-- Mobile Navigation Links -->
+      <div class="collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="#home"
+              class="nav-link neon-text dark:text-white light:text-gray-800 text-base sm:text-lg">Home</a></li>
+          <li class="nav-item"><a href="#about"
+              class="nav-link neon-text dark:text-white light:text-gray-800 text-base sm:text-lg">Profile</a></li>
+          <li class="nav-item"><a href="./Blogs/blogs.html"
+              class="nav-link neon-text dark:text-white light:text-gray-800 text-base sm:text-lg">Blogs</a></li>
+          <li class="nav-item"><a href="#journey"
+              class="nav-link neon-text dark:text-white light:text-gray-800 text-base sm:text-lg">Journey</a></li>
+          <li class="nav-item"><a href="#skills"
+              class="nav-link neon-text dark:text-white light:text-gray-800 text-base sm:text-lg">Expertise</a></li>
+          <li class="nav-item"><a href="#terminal"
+              class="nav-link neon-text dark:text-white light:text-gray-800 text-base sm:text-lg">Terminal</a></li>
+          <li class="nav-item"><a href="#contact"
+              class="nav-link neon-text dark:text-white light:text-gray-800 text-base sm:text-lg">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex flex-col items-center justify-center relative overflow-hidden py-20 px-8">
+    <!-- Background pattern -->
+    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/circuit.png')] opacity-15 z-0">
+    </div>
+
+    <!-- Content container with padding and margin -->
+    <div
+      class="text-center z-10 slide-in max-w-6xl w-full px-4 py-20 border-5 border-green-500 rounded-3xl bg-opacity-50 bg-gray-1 "
+      style="margin-top: 100px;">
+      <!-- Name -->
+      <h1
+        class="text-16xl md:text-6xl font-bold mb-9 bg-gradient-to-r from-green-100 via-blue-500 to-red-500 bg-clip-text text-transparent neon-text">
+        Mustafa Faek Banikhalaf
+      </h1><br>
+
+      <!-- Title -->
+      <p
+        class="text-2xl md:text-1xl mb-8 dark:text-green-100 light:text-blue-700 cyber-pulse w-fit px-4 py-2 border-2 border-green-500 rounded-3xl">
+        Cybersecurity Engineer | Penetration Testing | Red Teaming
+      </p><br>
+      <!-- Tagline -->
+      <p class="text-lg md:text-xl dark:text-gray-300 light:text-gray-600 max-w-0xl mx-auto">
+        "Securing the digital realm with precision and innovation."
+      </p>
+    </div>
+  </section>
+
+  <!-- 3D Shapes Animation Section -->
+  <div id="hacker-3d" class="mt-12 z-10">
+    <div class="shape cube">
+      <div class="cube-face front"></div>
+      <div class="cube-face back"></div>
+      <div class="cube-face right"></div>
+      <div class="cube-face left"></div>
+      <div class="cube-face top"></div>
+      <div class="cube-face bottom"></div>
+    </div>
+    <div class="shape tetrahedron">
+      <div class="tetra-face"></div>
+      <div class="tetra-face"></div>
+      <div class="tetra-face"></div>
+      <div class="tetra-face"></div>
+    </div>
+    <div class="shape octahedron">
+      <div class="octa-face"></div>
+      <div class="octa-face"></div>
+      <div class="octa-face"></div>
+      <div class="octa-face"></div>
+      <div class="octa-face"></div>
+      <div class="octa-face"></div>
+      <div class="octa-face"></div>
+      <div class="octa-face"></div>
+    </div>
+  </div>
+
+  <!-- Divider -->
+  <div class="w-full h-1 bg-gradient-to-r from-green-500 via-blue-500 to-red-500 opacity-50"></div>
+
+  <!-- About Section -->
+  <section id="about" class="py-28 px-8 max-w-7xl mx-auto">
+    <h2 class="text-5xl font-bold text-center mb-16 dark:text-blue-400 light:text-blue-600 slide-in">Professional
+      Profile</h2>
+    <div class="md:grid md:grid-cols-2 gap-12">
+      <div class="cyber-card p-10 rounded-2xl slide-in">
+        <h3 class="text-2xl font-semibold mb-6 dark:text-green-400 light:text-green-600"> 🔻Mission Statement</h3>
+        <p class="mb-6 text-lg">A dedicated and driven Cybersecurity Engineer currently pursuing a Bachelor of Science
+          (B.Sc.) degree at Yarmouk University, with an expected graduation in 2025.<br><br> The professional journey
+          began in
+          2022, initially focusing on resolving system failures, and has since evolved into a mission to safeguard the
+          digital landscape through advanced techniques and leadership.
+
+          <br><br>As the founder of the Digital Security Community (DSC YU) at Yarmouk University, there is a strong
+          commitment
+          to empowering others in mastering ethical hacking and digital forensics. This dedication is further reinforced
+          by certifications such as the eJPTv2 (eLearnSecurity Junior Penetration Tester), with ongoing efforts to
+          achieve the OSCP (Offensive Security Certified Professional) certification to strengthen expertise and
+          contribute meaningfully to the field of cybersecurity.
+
+        </p>
+      </div>
+      <div class="mt-8 md:mt-0 cyber-card p-10 rounded-2xl slide-in">
+        <h3 class="text-2xl font-semibold mb-6 dark:text-green-400 light:text-green-600">💀 Core Competencies</h3>
+        <ul class="grid grid-cols-2 gap-4 text-lg">
+          <li>✅ Cybersecurity Strategy</li>
+          <li>✅ Penetration Testing</li>
+          <li>✅ Red Team Operations</li>
+          <li>✅ OSINT Analysis</li>
+          <li>✅ Network Security</li>
+          <li>✅ Linux Administration</li>
+          <li>✅ Cloud Security (AWS, Azure, GCP)</li>
+          <li>✅ Digital Forensics & Incident Response (DFIR)</li>
+          <li>✅ Security Information and Event Management (SIEM)</li>
+          <li>✅ Endpoint Protection & EDR Solutions</li>
+          <li>✅ Compliance & Auditing (ISO 27001, NIST, GDPR)</li>
+        </ul>
+        <h3 class="text-2xl font-semibold mt-8 mb-4 dark:text-green-400 light:text-green-600">✨ Languages</h3>
+        <p>English (Professional Proficiency) | Arabic (Native)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3D Shapes Animation Section -->
+  <div id="hacker-3d" class="mt-12 z-10">
+    <div class="shape cube">
+      <div class="cube-face front"></div>
+      <div class="cube-face back"></div>
+      <div class="cube-face right"></div>
+      <div class="cube-face left"></div>
+      <div class="cube-face top"></div>
+      <div class="cube-face bottom"></div>
+    </div>
+    <div class="shape tetrahedron">
+      <div class="tetra-face"></div>
+      <div class="tetra-face"></div>
+      <div class="tetra-face"></div>
+      <div class="tetra-face"></div>
+    </div>
+    <div class="shape octahedron">
+      <div class="octa-face"></div>
+      <div class="octa-face"></div>
+      <div class="octa-face"></div>
+      <div class="octa-face"></div>
+      <div class="octa-face"></div>
+      <div class="octa-face"></div>
+      <div class="octa-face"></div>
+      <div class="octa-face"></div>
+    </div>
+  </div>
+
+  <!-- Divider -->
+  <div class="w-full h-1 bg-gradient-to-r from-green-500 via-blue-500 to-red-500 opacity-50"></div>
+
+  <!-- Journey Section -->
+  <section id="journey" class="py-28 px-8 bg-opacity-90 dark:bg-gray-900 light:bg-gray-100">
+    <h2 class="text-5xl font-bold text-center mb-16 dark:text-blue-400 light:text-blue-600 slide-in">Career Trajectory
+    </h2>
+    <div class="max-w-4xl mx-auto relative timeline">
+
+      <!-- Initiation (2022) -->
+      <div class="pl-14 py-10 cyber-card rounded-2xl slide-in">
+        <div class="absolute w-10 h-10 bg-green-500 rounded-full -left-5 top-12 cyber-pulse"></div>
+        <h3 class="text-2xl font-semibold dark:text-green-400 light:text-green-600">Initiation (2022)</h3>
+        <p class="dark:text-red-400 light:text-red-600 text-lg">Technical Support Associate, Yarmouk University</p>
+        <p class="text-lg">Resolved system anomalies, managed server infrastructure, and developed computer information
+          systems, igniting my passion for cybersecurity and technical problem-solving.</p>
+      </div>
+
+      <!-- Technical Leadership (2023) -->
+      <div class="pl-14 py-10 cyber-card rounded-2xl slide-in">
+        <div class="absolute w-10 h-10 bg-green-500 rounded-full -left-5 top-12 cyber-pulse"></div>
+        <h3 class="text-2xl font-semibold dark:text-green-400 light:text-green-600">Technical Leadership (2023)</h3>
+        <p class="dark:text-red-400 light:text-red-600 text-lg">Technical Director, Google Developer Student Club (GDSC
+          YU)</p>
+        <p class="text-lg">Led a dynamic student community in organizing coding bootcamps, hackathons, and tech talks,
+          bridging the gap between academic learning and industry demands in areas like AI, cybersecurity, and cloud
+          computing.</p>
+      </div>
+
+      <!-- Leadership (2022-2023) -->
+      <div class="pl-14 py-10 cyber-card rounded-2xl slide-in">
+        <div class="absolute w-10 h-10 bg-green-500 rounded-full -left-5 top-12 cyber-pulse"></div>
+        <h3 class="text-2xl font-semibold dark:text-green-400 light:text-green-600">Leadership (2022-2023)</h3>
+        <p class="dark:text-red-400 light:text-red-600 text-lg">Academic Director, DevIT YU</p>
+        <p class="text-lg">Directed technology workshops, training courses, and conferences, enhancing the technical
+          skills and intellectual capacity of the student community at Yarmouk University.</p>
+      </div>
+
+      <!-- Advisory (2023-2025) -->
+      <div class="pl-14 py-10 cyber-card rounded-2xl slide-in">
+        <div class="absolute w-10 h-10 bg-green-500 rounded-full -left-5 top-12 cyber-pulse"></div>
+        <h3 class="text-2xl font-semibold dark:text-green-400 light:text-green-600">Advisory (2023-2025)</h3>
+        <p class="dark:text-red-400 light:text-red-600 text-lg">Cybersecurity Advisor, DevIT YU</p>
+        <p class="text-lg">Mentored students in cybersecurity practices, threat mitigation, and resilience strategies,
+          while organizing technology-driven conferences to address evolving cybersecurity challenges.</p>
+      </div>
+
+      <!-- Community Engagement (2024-2025) -->
+      <div class="pl-14 py-10 cyber-card rounded-2xl slide-in">
+        <div class="absolute w-10 h-10 bg-green-500 rounded-full -left-5 top-12 cyber-pulse"></div>
+        <h3 class="text-2xl font-semibold dark:text-green-400 light:text-green-600">Community Engagement (2024-Present)
+        </h3>
+        <p class="dark:text-red-400 light:text-red-600 text-lg">Social Worker, Tech3arabi.com</p>
+        <p class="text-lg">Contributed to raising community awareness about technology advancements, including AI, the
+          metaverse, and digital marketing, empowering individuals to actively participate in the digital age.</p>
+      </div>
+
+      <!-- Innovation (2024-Present) -->
+      <div class="pl-14 py-10 cyber-card rounded-2xl slide-in">
+        <div class="absolute w-10 h-10 bg-green-500 rounded-full -left-5 top-12 cyber-pulse"></div>
+        <h3 class="text-2xl font-semibold dark:text-green-400 light:text-green-600">Innovation (2024-Present)</h3>
+        <p class="dark:text-red-400 light:text-red-600 text-lg">Founder, Digital Security Community (DSC YU)</p>
+        <p class="text-lg">Established a pioneering student-led initiative to empower peers in digital security through
+          workshops, bootcamps, and events on ethical hacking, penetration testing, and digital forensics, fostering a
+          culture of digital safety and resilience.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3D Shapes Animation Section -->
+  <div id="hacker-3d" class="mt-12 z-10">
+    <div class="shape cube">
+      <div class="cube-face front"></div>
+      <div class="cube-face back"></div>
+      <div class="cube-face right"></div>
+      <div class="cube-face left"></div>
+      <div class="cube-face top"></div>
+      <div class="cube-face bottom"></div>
+    </div>
+    <div class="shape tetrahedron">
+      <div class="tetra-face"></div>
+      <div class="tetra-face"></div>
+      <div class="tetra-face"></div>
+      <div class="tetra-face"></div>
+    </div>
+    <div class="shape octahedron">
+      <div class="octa-face"></div>
+      <div class="octa-face"></div>
+      <div class="octa-face"></div>
+      <div class="octa-face"></div>
+      <div class="octa-face"></div>
+      <div class="octa-face"></div>
+      <div class="octa-face"></div>
+      <div class="octa-face"></div>
+    </div>
+  </div>
+
+  <!-- Divider -->
+  <div class="w-full h-1 bg-gradient-to-r from-green-500 via-blue-500 to-red-500 opacity-50"></div>
+
+  <!-- Skills & Certifications Section -->
+  <section id="skills" class="py-28 px-8 max-w-7xl mx-auto">
+    <h2 class="text-5xl font-bold text-center mb-16 dark:text-blue-400 light:text-blue-600 slide-in">Technical Arsenal
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <!-- Skill Set -->
+      <div class="cyber-card p-10 rounded-2xl slide-in">
+        <h3 class="text-2xl font-semibold mb-6 dark:text-green-400 light:text-green-600">Skill Set</h3>
+        <ul class="space-y-6 text-lg">
+          <li>Penetration Testing
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 90%;"></div>
+            </div>
+          </li>
+          <li>Network Security
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 85%;"></div>
+            </div>
+          </li>
+          <li>Red Teaming
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 80%;"></div>
+            </div>
+          </li>
+          <li>OSINT & Bug Bounty
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 75%;"></div>
+            </div>
+          </li>
+          <li>Cloud Security (AWS, Azure, GCP)
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 80%;"></div>
+            </div>
+          </li>
+          <li>Digital Forensics & Incident Response (DFIR)
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 70%;"></div>
+            </div>
+          </li>
+          <li>Security Information and Event Management (SIEM)
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 75%;"></div>
+            </div>
+          </li>
+          <li>Linux Administration & Hardening
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 85%;"></div>
+            </div>
+          </li>
+          <li>Endpoint Protection & EDR Solutions
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 70%;"></div>
+            </div>
+          </li>
+          <li>Compliance & Auditing (ISO 27001, NIST, GDPR)
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 75%;"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Certifications -->
+      <div class="cyber-card p-10 rounded-2xl slide-in">
+        <h3 class="text-2xl font-semibold mb-6 dark:text-green-400 light:text-green-600">Certifications</h3>
+        <ul class="space-y-4 text-lg">
+          <li>🔻CC of ISC2 (Certified in Cybersecurity)</li>
+          <li>🔻CompTIA A+</li>
+          <li>🔻Cisco CCNA & CCNP</li>
+          <li>🔻MCSA (Microsoft Certified Solutions Associate)</li>
+          <li>🔻Linux Administration</li>
+          <li>🔻eJPTv2 (eLearnSecurity Junior Penetration Tester)</li>
+          <li>🔻eCCPT (eLearnSecurity Certified Cybersecurity Professional)</li>
+          <li>🔻OSCP (Offensive Security Certified Professional) - In Progress</li>
+          <li>🔻QA Software Testing</li>
+          <li>🔻AWS Generative AI</li>
+        </ul>
+      </div>
+
+      <!-- Publications -->
+      <div class="cyber-card p-10 rounded-2xl slide-in">
+        <h3 class="text-2xl font-semibold mb-6 dark:text-green-400 light:text-green-600">Publications</h3>
+        <ul class="space-y-4 text-lg">
+          <li>🔻Cybersecurity Essentials</li>
+          <li>🔻Black Hat Python</li>
+          <li>🔻The Linux Command Line</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 3D Shapes Animation Section -->
+  <div id="hacker-3d" class="mt-12 z-10">
+    <div class="shape cube">
+      <div class="cube-face front"></div>
+      <div class="cube-face back"></div>
+      <div class="cube-face right"></div>
+      <div class="cube-face left"></div>
+      <div class="cube-face top"></div>
+      <div class="cube-face bottom"></div>
+    </div>
+    <div class="shape tetrahedron">
+      <div class="tetra-face"></div>
+      <div class="tetra-face"></div>
+      <div class="tetra-face"></div>
+      <div class="tetra-face"></div>
+    </div>
+    <div class="shape octahedron">
+      <div class="octa-face"></div>
+      <div class="octa-face"></div>
+      <div class="octa-face"></div>
+      <div class="octa-face"></div>
+      <div class="octa-face"></div>
+      <div class="octa-face"></div>
+      <div class="octa-face"></div>
+      <div class="octa-face"></div>
+    </div>
+  </div>
+
+  <!-- Divider -->
+  <div class="w-full h-1 bg-gradient-to-r from-green-500 via-blue-500 to-red-500 opacity-50"></div>
+
+  <!-- Terminal Section -->
+  <section id="terminal" class="py-28 px-8 max-w-7xl mx-auto">
+    <h2 class="text-5xl font-bold text-center mb-16 dark:text-blue-400 light:text-blue-600 slide-in">Cyber Terminal</h2>
+    <div class="terminal max-w-2xl mx-auto slide-in">
+      <div class="flex justify-between items-center mb-4">
+        <span class="dark:text-green-400 light:text-blue-600">user@mustafa-cyber:~$</span>
+        <span id="live-clock" class="dark:text-red-400 light:text-red-600"></span>
+      </div>
+      <p class="dark:text-gray-300 light:text-gray-600">> whoami</p>
+      <p class="dark:text-gray-300 light:text-gray-600 typing-text">Mustafa Faek Banikhalaf - Cybersecurity Engineer</p>
+      <p class="dark:text-gray-300 light:text-gray-600">> skills</p>
+      <p class="dark:text-gray-300 light:text-gray-600 typing-text">Penetration Testing | Red Teaming | Network Security
+      </p>
+      <p class="dark:text-gray-300 light:text-gray-600">> status</p>
+      <p class="dark:text-gray-300 light:text-gray-600 typing-text">Active - Securing the digital frontier since 2022
+      </p>
+      <p class="dark:text-gray-300 light:text-gray-600 mt-4">> live-stats</p>
+      <p class="dark:text-gray-300 light:text-gray-600" id="live-stats">Threats Blocked: <span
+          id="threat-count">0</span></p>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="w-full h-1 bg-gradient-to-r from-green-500 via-blue-500 to-red-500 opacity-50"></div>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-28 px-8 bg-opacity-90 dark:bg-gray-900 light:bg-gray-100">
+    <h2 class="text-5xl font-bold text-center mb-16 dark:text-blue-400 light:text-blue-600 slide-in">Secure
+      Communication</h2>
+    <div class="max-w-lg mx-auto slide-in">
+      <p class="text-center mb-10 text-lg dark:text-gray-300 light:text-gray-600">Establish a secure
+        connection—collaborate on the future of cybersecurity.</p>
+      <form id="contact-form" class="space-y-6" method="post" autocomplete="off">
+        <input type="text" id="name" name="name" placeholder="Name" required autocomplete="off"
+          class="w-full p-5 rounded-lg dark:bg-gray-800 light:bg-gray-200 border dark:border-green-500 light:border-blue-500 focus:ring-4 dark:focus:ring-green-400 light:focus:ring-blue-600 outline-none dark:text-gray-200 light:text-gray-800 transition-all form-control">
+        <input type="email" id="email" name="email" placeholder="Email" required autocomplete="off"
+          class="w-full p-5 rounded-lg dark:bg-gray-800 light:bg-gray-200 border dark:border-green-500 light:border-blue-500 focus:ring-4 dark:focus:ring-green-400 light:focus:ring-blue-600 outline-none dark:text-gray-200 light:text-gray-800 transition-all form-control">
+        <textarea id="message" name="message" placeholder="Message" rows="6" required autocomplete="off"
+          class="w-full p-5 rounded-lg dark:bg-gray-800 light:bg-gray-200 border dark:border-green-500 light:border-blue-500 focus:ring-4 dark:focus:ring-green-400 light:focus:ring-blue-600 outline-none dark:text-gray-200 light:text-gray-800 transition-all form-control"></textarea>
+        <input type="hidden" name="csrf_token" id="csrf_token">
+        <button type="submit" id="button"
+          class="w-full bg-gradient-to-r from-red-600 to-red-800 dark:from-red-700 dark:to-red-900 light:from-red-500 light:to-red-700 text-white p-5 rounded-full cyber-card text-lg font-medium btn btn-danger cyber-button cyber-button-submit"
+          style="display: block !important; opacity: 1 !important; z-index: 20;">Transmit Securely</button>
+      </form>
+      <p id="form-message" class="text-center mt-4 text-lg"></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer
+    class="py-12 px-8 bg-opacity-95 dark:bg-gray-900 light:bg-white text-center dark:text-gray-400 light:text-gray-600 glass-effect">
+    <p>© 2025 Mustafa Faek Banikhalaf | Engineered for Security Excellence</p>
+    <div class="mt-6 cyber-card p-6 max-w-2xl mx-auto">
+      <h3 class="text-xl font-semibold mb-4 dark:text-green-400 light:text-blue-600">Connect With Me</h3>
+      <div class="space-y-2">
+        <p>Email: <a href="mailto:mustafabanikhalaf772@gmail.com"
+            class="dark:text-green-400 light:text-blue-600 hover:underline">mustafabanikhalaf772@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/mfmbk" target="_blank"
+            class="dark:text-green-400 light:text-blue-600 hover:underline">Mustafa Faek Banikhalaf</a></p>
+      </div>
+      <div class="mt-4 flex justify-center gap-6">
+        <a href="https://github.com/MustafaFBK" class="dark:text-green-400 light:text-blue-600 hover:text-red-400"><i
+            class="fab fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" data-bs-toggle="tooltip" title="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Theme Toggle
+      const toggleButton = document.getElementById('theme-toggle');
+      const body = document.body;
+      let binaryRainInterval = null;
+
+      function startBinaryRain() {
+        const canvas = document.getElementById('binary-rain');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const columns = Math.floor(canvas.width / 20);
+        const drops = Array(columns).fill(0);
+
+        function draw() {
+          ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
+          ctx.fillRect(0, 0, canvas.width, canvas.height);
+          ctx.fillStyle = '#09ff00';
+          ctx.font = '15px monospace';
+
+          for (let i = 0; i < drops.length; i++) {
+            const text = Math.random() > 0.5 ? '1' : '0';
+            ctx.fillText(text, i * 20, drops[i] * 20);
+            if (drops[i] * 20 > canvas.height && Math.random() > 0.975) {
+              drops[i] = 0;
+            }
+            drops[i]++;
+          }
+        }
+
+        binaryRainInterval = setInterval(draw, 50);
+        window.addEventListener('resize', () => {
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
+        });
+      }
+
+      function stopBinaryRain() {
+        if (binaryRainInterval) {
+          clearInterval(binaryRainInterval);
+          binaryRainInterval = null;
+          const canvas = document.getElementById('binary-rain');
+          const ctx = canvas.getContext('2d');
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+      }
+
+      function updateTheme() {
+        if (body.classList.contains('dark')) {
+          startBinaryRain();
+        } else {
+          stopBinaryRain();
+        }
+        localStorage.setItem('theme', body.classList.contains('dark') ? 'dark' : 'light');
+      }
+
+      toggleButton.addEventListener('click', () => {
+        body.classList.toggle('dark');
+        body.classList.toggle('light');
+        updateTheme();
+      });
+
+      const savedTheme = localStorage.getItem('theme') || 'dark';
+      body.classList.add(savedTheme);
+      if (savedTheme === 'dark') {
+        startBinaryRain();
+      }
+
+      // Live Clock
+      function updateClock() {
+        const now = new Date();
+        document.getElementById('live-clock').textContent = now.toLocaleTimeString();
+      }
+      setInterval(updateClock, 1000);
+      updateClock();
+
+      // 3D Shapes Animation with GSAP
+      function init3D() {
+        console.log("Initializing 3D...");
+        const cube = document.querySelector('.cube');
+        const tetrahedron = document.querySelector('.tetrahedron');
+        const octahedron = document.querySelector('.octahedron');
+
+        if (!cube || !tetrahedron || !octahedron) {
+          document.getElementById('hacker-3d').innerHTML = `<p class="text-red-500 text-center">3D Failed: Shape elements not found</p>`;
+          return;
+        }
+
+        if (typeof gsap !== 'undefined') {
+          // Initial positioning and scaling for better visibility
+          gsap.set(cube, { x: '-20%', scale: 1.2 });
+          gsap.set(tetrahedron, { x: 0, scale: 1 });
+          gsap.set(octahedron, { x: '20%', scale: 1.1 });
+
+          // Animate cube with rotation and slight scaling
+          gsap.to(cube, {
+            rotationX: 360,
+            rotationY: 360,
+            scale: 1.3,
+            duration: 8,
+            repeat: -1,
+            ease: "power1.inOut",
+            yoyo: true
+          });
+
+          // Animate tetrahedron with a different speed and direction
+          gsap.to(tetrahedron, {
+            rotationX: -360,
+            rotationY: 360,
+            scale: 1.1,
+            duration: 10,
+            repeat: -1,
+            ease: "power1.inOut",
+            yoyo: true
+          });
+
+          // Animate octahedron with a slower rotation
+          gsap.to(octahedron, {
+            rotationX: 360,
+            rotationY: -360,
+            scale: 1.2,
+            duration: 12,
+            repeat: -1,
+            ease: "power1.inOut",
+            yoyo: true
+          });
+
+          // Fade-in animation for all shapes
+          gsap.from([cube, tetrahedron, octahedron], {
+            opacity: 0,
+            y: 50,
+            duration: 1.5,
+            stagger: 0.3,
+            ease: "power2.out"
+          });
+
+          console.log("3D Animation Started");
+        } else {
+          console.error('GSAP is not loaded.');
+        }
+      }
+
+      // Hide Preloader and Start Animations
+      window.addEventListener('load', () => {
+        console.log("Page Loaded");
+        const preloader = document.getElementById('preloader');
+        if (preloader) preloader.classList.add('hidden');
+        init3D();
+      });
+
+      // Back to Top
+      const backToTop = document.getElementById('back-to-top');
+      window.addEventListener('scroll', () => {
+        if (backToTop) backToTop.classList.toggle('visible', window.scrollY > 300);
+      });
+      if (backToTop) backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // GSAP Animations
+      if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+        gsap.from('.slide-in', { x: -100, opacity: 0, duration: 1, stagger: 0.2, scrollTrigger: { trigger: '.slide-in' } });
+        gsap.from('.cyber-card', {
+          y: 50,
+          opacity: 0,
+          duration: 1,
+          stagger: 0.3,
+          scrollTrigger: {
+            trigger: '.cyber-card',
+            start: 'top 80%',
+            toggleActions: 'play none none reset'
+          },
+          onComplete: () => {
+            document.querySelectorAll('.cyber-card').forEach(el => {
+              el.style.opacity = '1';
+            });
+          }
+        });
+      } else {
+        console.error('GSAP or ScrollTrigger not loaded. Applying fallback visibility.');
+        document.querySelectorAll('.slide-in, .cyber-card').forEach(el => {
+          el.style.opacity = '1';
+          el.style.transform = 'translate(0, 0)';
+        });
+      }
+
+      // Live Stats
+      let threatCount = 0;
+      setInterval(() => {
+        const threatCountElement = document.getElementById('threat-count');
+        if (threatCountElement) threatCountElement.textContent = (threatCount += Math.floor(Math.random() * 10));
+      }, 2000);
+
+      // Bootstrap Tooltips
+      if (typeof bootstrap !== 'undefined') {
+        const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        tooltipTriggerList.map(el => new bootstrap.Tooltip(el));
+      }
+    });
+  </script>
+</body>
+
+</html>

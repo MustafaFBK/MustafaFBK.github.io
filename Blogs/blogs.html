@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description"
+    content="Explore cutting-edge cybersecurity insights and hacker aesthetics at Hacker Vault Blogs. Learn about zero-day vulnerabilities, AI in cybersecurity, phishing attacks, and more.">
+  <meta name="keywords"
+    content="Cybersecurity, Hacker Vault, Blogs, Zero-Day Vulnerabilities, AI in Cybersecurity, Phishing Attacks, Hacking, Security">
+  <meta name="author" content="Hacker Vault">
+  <meta name="robots" content="index, follow">
+  <title>Blogs - Hacker Vault | Cybersecurity & Aesthetics</title>
+  <link rel="canonical" href="https://yourdomain.com/blogs.html">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" loading="lazy" media="all">
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Open Graph Meta Tags for Social Sharing -->
+  <meta property="og:title" content="Blogs - Hacker Vault">
+  <meta property="og:description"
+    content="Explore cutting-edge cybersecurity insights and hacker aesthetics at Hacker Vault Blogs.">
+  <meta property="og:image" content="https://yourdomain.com/favicon.png">
+  <meta property="og:url" content="https://yourdomain.com/blogs.html">
+  <meta property="og:type" content="website">
+
+  <!-- JSON-LD Schema for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Hacker Vault Blogs",
+    "description": "Explore cutting-edge cybersecurity insights and hacker aesthetics with in-depth articles on zero-day vulnerabilities, AI in cybersecurity, and phishing attacks.",
+    "url": "https://yourdomain.com/blogs.html",
+    "image": "https://yourdomain.com/favicon.png",
+    "author": {
+      "@type": "Organization",
+      "name": "Hacker Vault",
+      "url": "https://yourdomain.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Hacker Vault",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://yourdomain.com/favicon.png"
+      }
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <header class="header" role="banner">
+    <nav class="nav-bar" role="navigation" aria-label="Main Navigation">
+      <a href="../index.html" aria-label="Home Page">Home</a>
+      <a href="blogs.html" aria-label="Blog Section" aria-current="page">Blogs</a>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle between light and dark theme">
+      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+        <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14V4a6 6 0 010 12z" />
+      </svg>
+    </button>
+  </header>
+
+  <main role="main">
+    <!-- Hero Section -->
+    <section class="hero" aria-label="Welcome to Hacker Vault Blogs">
+      <h1 class="hero-title">Hacker Vault Blogs</h1>
+      <p class="hero-subtitle">Unveiling the Secrets of Cybersecurity and Digital Aesthetics</p>
+      <div class="search-container" role="search">
+        <input type="text" class="search-bar" id="searchBar" placeholder="> Search blogs..."
+          aria-label="Search blog posts">
+        <button class="search-btn" aria-label="Perform search">🔍</button>
+      </div>
+    </section>
+
+    <!-- Blog Grid (Dynamically Populated) -->
+    <section class="blog-grid" id="blogs-container" role="region" aria-label="Blog Posts">
+      <!-- Blog cards will be dynamically inserted here by JavaScript -->
+    </section>
+
+    <!-- Pagination -->
+    <br><br>
+    <div class="pagination" id="pagination" role="navigation" aria-label="Blog Pagination Controls">
+      <button class="pagination-btn" id="prevPage" aria-label="Go to previous page">« Prev</button>
+      <span id="pageInfo" aria-live="polite"></span>
+      <button class="pagination-btn" id="nextPage" aria-label="Go to next page">Next »</button>
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <p>© 2025 Hacker Vault. All rights reserved.</p>
+    <a href="#top" aria-label="Back to top of page">↑</a>
+  </footer>
+
+  <!-- Popup for Blog Content -->
+  <div class="popup-overlay" id="blogPopupOverlay" aria-hidden="true"></div>
+  <div class="popup" id="blogPopup" role="dialog" aria-labelledby="blogPopupTitle" aria-hidden="true" aria-modal="true">
+    <div class="popup-content">
+      <h2 id="blogPopupTitle"></h2>
+      <div class="meta" id="blogPopupMeta"></div>
+      <div id="blogPopupContent" class="popup-text"></div>
+      <div class="popup-actions">
+        <button class="close-btn" id="blogPopupClose" aria-label="Close popup dialog">> Exit</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- External Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/marked@4.3.0/marked.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="scripts.js" defer></script>
+</body>
+
+</html>
